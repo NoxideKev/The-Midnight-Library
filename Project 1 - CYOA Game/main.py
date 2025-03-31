@@ -68,14 +68,20 @@ def gameplay():
         for text in knowledge_path:
           time.sleep(1.2)
           print(text)
+        time.sleep(1.4)
+        print("You have gained ultimate knowledge, but lost your existence.")
       elif selection == "power":
         for text in power_path:
           time.sleep(1.2)
           print(text)
+        time.sleep(1.4)
+        print("You have gained ultimate strength, but you can never leave.")
       elif selection == "freedom":
         for text in freedom_path:
           time.sleep(1.2)
           print(text)
+        time.sleep(1.4)
+        print("You have escaped, but at the cost of never knowing what could have been.")
     else:
       invalid_input()
       continue
@@ -106,6 +112,7 @@ def start():
 start()
 start_game = False
 restart_input = False
+time.sleep(1.2)
 print(gameover)
 print("\n")
 time.sleep(1.2)
